@@ -238,11 +238,11 @@ ol {
 	Intro section
 -----------------------*/
 .intro-text {
-	padding-top: 70px;
+	padding-top: 0;
 }
 
 .intro-text p {
-	margin-bottom: 50px;
+	margin-bottom: 0;
 }
 
 /*---------------------
