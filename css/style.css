@@ -100,7 +100,7 @@ ol {
 	font-size: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
-	margin-bottom: 45px;
+	margin-bottom: 0;
 	letter-spacing: 6px;
 }
 
@@ -252,15 +252,21 @@ ol {
 /*---------------------
 	Portfolio section
 -----------------------*/
+
+
+
 .portfolio-warp {
 	position: relative;
 	display: block;
 	overflow: hidden;
+	margin-top: 0;
+	padding-top: 0;
+
 }
 
 .single-portfolio {
-	height: 30em;
-	width: 33.333333%;
+	height: 500px;
+	width: 33.33%;
 	position: relative;
 	float: left;
 	display: block;
@@ -293,8 +299,8 @@ ol {
 
 .portfolio-info .pfbg {
 	position: absolute;
-	width: 110%;
-	height: 110%;
+	width: 100%;
+	height: 100%;
 	left: -5%;
 	top: -5%;
 	-webkit-transform: scale(1.12);
@@ -373,11 +379,14 @@ ol {
 	float: right;
 }
 
+.featured {
+	background-image: url(../img/featured.jpg)
+}
 /*---------------------
 	Footer section
 ----------------------*/
 .footer-section {
-	background: #0d0d0d;
+	background-image: url(../img/background.jpg)
 }
 
 .footer-section h2 {
@@ -403,9 +412,12 @@ ol {
 }
 
 
+.bottom {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
 
 
-/*
 @media only screen and (max-width: 1650px) {
 	.sp-pad {
 		padding-left: 90px;
@@ -435,16 +447,16 @@ ol {
 		padding-top: 165px;
 	}
 }
-*/
+
 /* Medium screen : 992px. */
-/*
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	
 	.single-portfolio {
-		width: 90%;
+		width: 33.33%;
 	}
 	.single-portfolio.sm-wide {
-		width: 90%;
+		width: 33.33%;
 	}
 	.single-portfolio.sm-wide.md-w-100 {
 		width: 100%;
@@ -452,12 +464,16 @@ ol {
 	.single-portfolio .md-w-100 {
 		width: 100%;
 	}
+
+	.top {
+		background-image: url(../img/background-1200.jpg)
+	}
 	
 	
 }
 */
 /* Tablet :768px. */
-/*
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	
 	.single-portfolio {
@@ -472,11 +488,14 @@ ol {
 	.single-portfolio .md-w-100 {
 		width: 100%;
 	}
+
+	.top {
+		background-image: url(../img/background-1000.jpg)
+	}
 	
 }
 
-/* Large Mobile :480px. */
-/*
+
 @media only screen and (max-width: 767px) {
 	.search-top {
 		display: none;
@@ -502,11 +521,14 @@ ol {
 	.single-portfolio .md-w-100 {
 		width: 100%;
 	}
+
+	.top {
+		background-image: url(../img/background-sm.jpg)
+	}
 	
 }
 
-/* small Mobile :320px. */
-/*
+
 @media only screen and (max-width: 479px) {
 	
 	.sp-pad {
@@ -517,5 +539,7 @@ ol {
 	.footer-section h2 {
 		font-size: 33px;
 	}
+	.top {
+		background-image: url(../img/background-1000.jpg)
+	}
 }
-*/
