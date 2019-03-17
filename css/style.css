@@ -28,27 +28,27 @@ h6 {
 }
 
 h1 {
-	font-size: 60px;
+	font-size: 4em;
 }
 
 h2 {
-	font-size: 48px;
+	font-size: 3em;
 }
 
 h3 {
-	font-size: 30px;
+	font-size: 2em;
 }
 
 h4 {
-	font-size: 16px;
+	font-size: 1.5em;
 }
 
 h5 {
-	font-size: 14px;
+	font-size: 1.25em;
 }
 
 p {
-	font-size: 14.2px;
+	font-size: 1.5em;
 	color: #868686;
 	line-height: 2.2;
 }
@@ -80,13 +80,13 @@ ol {
 	Helper CSS
 -----------------------*/
 .spad {
-	padding-top: 130px;
-	padding-bottom: 130px;
+	padding-top: 6em;
+	padding-bottom: 6em;
 }
 
 .sp-pad {
-	padding-left: 150px;
-	padding-right: 150px;
+	padding-left: 7em;
+	padding-right: 7em;
 }
 
 .sp-sub-title {
@@ -245,6 +245,10 @@ ol {
 	margin-bottom: 0;
 }
 
+.top {
+	background-image: url(../img/background.jpg)
+}
+
 /*---------------------
 	Portfolio section
 -----------------------*/
@@ -255,7 +259,7 @@ ol {
 }
 
 .single-portfolio {
-	height: 580px;
+	height: 30em;
 	width: 33.333333%;
 	position: relative;
 	float: left;
@@ -401,9 +405,7 @@ ol {
 
 
 
-/*---------------------
-	Responsive 
------------------------*/
+/*
 @media only screen and (max-width: 1650px) {
 	.sp-pad {
 		padding-left: 90px;
@@ -433,15 +435,16 @@ ol {
 		padding-top: 165px;
 	}
 }
-
+*/
 /* Medium screen : 992px. */
+/*
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	
 	.single-portfolio {
-		width: 50%;
+		width: 90%;
 	}
 	.single-portfolio.sm-wide {
-		width: 50%;
+		width: 90%;
 	}
 	.single-portfolio.sm-wide.md-w-100 {
 		width: 100%;
@@ -452,8 +455,9 @@ ol {
 	
 	
 }
-
+*/
 /* Tablet :768px. */
+/*
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	
 	.single-portfolio {
@@ -472,6 +476,7 @@ ol {
 }
 
 /* Large Mobile :480px. */
+/*
 @media only screen and (max-width: 767px) {
 	.search-top {
 		display: none;
@@ -501,6 +506,7 @@ ol {
 }
 
 /* small Mobile :320px. */
+/*
 @media only screen and (max-width: 479px) {
 	
 	.sp-pad {
@@ -512,3 +518,4 @@ ol {
 		font-size: 33px;
 	}
 }
+*/
