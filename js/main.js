@@ -1,4 +1,4 @@
-
+/* Code based on Halo Bootstrap Template */
 
 $(window).on('load', function() {
 
@@ -22,11 +22,5 @@ $(window).on('load', function() {
 
 })(jQuery);
 
-$(document).ready(function() {
-    $('.nav-item').animateClick({
-        "color":"blue",
-        "animation":"signal",
-        "size":12
-    });
-});
+
 
