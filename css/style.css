@@ -48,21 +48,16 @@ h5 {
 }
 
 p {
-	font-size: 1.5em;
-	color: #868686;
-	line-height: 2.2;
+	font-size: 2.1em;
+	color: darkslategrey;
+	line-height: 2.0;
 }
 
 img {
 	max-width: 100%;
 }
 
-input:focus,
-select:focus,
-button:focus,
-textarea:focus {
-	outline: none;
-}
+
 
 a:hover,
 a:focus {
@@ -237,6 +232,13 @@ ol {
 /*---------------------
 	Intro section
 -----------------------*/
+.big {
+	font-size: 5em;
+}
+.nav-item {
+	color: #222121;
+	font-weight: 900;
+}
 .intro-text {
 	padding-top: 0;
 }
@@ -247,6 +249,14 @@ ol {
 
 .top {
 	background-image: url(../img/background.jpg)
+}
+
+.transbox {
+  
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); 
 }
 
 /*---------------------
@@ -386,7 +396,7 @@ ol {
 	Footer section
 ----------------------*/
 .footer-section {
-	background-image: url(../img/background.jpg)
+	 background: #222121;
 }
 
 .footer-section h2 {
@@ -471,14 +481,15 @@ ol {
 	
 	
 }
-*/
-/* Tablet :768px. */
+
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	
 	.single-portfolio {
 		width: 50%;
 	}
+
 	.single-portfolio.sm-wide {
 		width: 50%;
 	}
@@ -490,16 +501,18 @@ ol {
 	}
 
 	.top {
-		background-image: url(../img/background-1000.jpg)
+		background-image: url(../img/background-1100.jpg)
+	}
+
+	.big {
+		font-size: 4em;
 	}
 	
 }
 
 
-@media only screen and (max-width: 767px) {
-	.search-top {
-		display: none;
-	}
+@media only screen and (min-width: 450px) and (max-width: 767px) {
+	
 	
 	.sp-pad {
 		padding-left: 15px;
@@ -525,11 +538,19 @@ ol {
 	.top {
 		background-image: url(../img/background-sm.jpg)
 	}
+
+	.big {
+		font-size: 3.5em;
+	}
 	
 }
 
 
 @media only screen and (max-width: 479px) {
+
+	.big {
+		font-size: 4em;
+	}
 	
 	.sp-pad {
 		padding-left: 15px;
@@ -541,5 +562,19 @@ ol {
 	}
 	.top {
 		background-image: url(../img/background-1000.jpg)
+	}
+
+	
+	.single-portfolio {
+		width: 100%;
+	}
+	.single-portfolio.sm-wide {
+		width: 100%;
+	}
+	.single-portfolio.sm-wide.md-w-100 {
+		width: 100%;
+	}
+	.single-portfolio .md-w-100 {
+		width: 100%;
 	}
 }
