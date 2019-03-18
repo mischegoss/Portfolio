@@ -1,14 +1,3 @@
-/* =================================
-------------------------------------
-  HALO - Photography Portfolio
-  Version: 1.0
- ------------------------------------ 
- ====================================*/
-
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
-
 html,
 body {
 	height: 100%;
@@ -125,26 +114,10 @@ ol {
 	
 }
 
-/*------------------------
-  Common Elements
---------------------------*/
-.element {
-	margin-bottom: 150px;
-}
 
-.element .sp-title {
-	margin-bottom: 70px;
-}
-
-.element:last-child {
-	margin-bottom: 0;
-}
-
-.element .site-btn {
-	margin-bottom: 10px;
-}
-
-/* Preloder */
+/*---------------------
+	Preloader
+----------------------*/
 
 #preloder {
 	position: fixed;
@@ -208,9 +181,6 @@ ol {
 	}
 }
 
-
-
-
 .icon-box {
 	margin-bottom: 70px;
 }
@@ -261,6 +231,8 @@ ol {
 
 /*---------------------
 	Portfolio section
+	Uses method from Hero
+	Bootstrap Template
 -----------------------*/
 
 
@@ -343,9 +315,9 @@ ol {
 
 .portfolio-filter li {
 	display: inline-block;
-	font-size: 12px;
+	font-size: 1.2em;
 	text-transform: uppercase;
-	margin-right: 12px;
+	margin-right: 1.5em;
 	color: #868686;
 	font-weight: 600;
 	cursor: pointer;
@@ -355,46 +327,15 @@ ol {
 	color: #111;
 }
 
-.flex-container {
-	display: flex;
-	justify-content: space-between;
-}
-/*---------------------
-	Milestones section
------------------------*/
-.milestones-section {
-	background: #222121;
-}
 
-.milestones-section .fact-box .fact-content {
-	text-align: center;
-	position: relative;
-}
-
-.milestones-section .fact-box .fact-content:after {
-	background: #6f6e6e;
-}
-
-.milestones-section .fact-box .fact-content i,
-.milestones-section .fact-box .fact-content h2,
-.milestones-section .fact-box .fact-content p {
-	color: #fff;
-}
-
-.milestones-section .fact-box:last-child .fact-content:after {
-	display: none;
-}
-
-.floatit {
-	float: right;
-}
-
-.featured {
-	background-image: url(../img/featured.jpg)
-}
 /*---------------------
 	Footer section
 ----------------------*/
+
+.icons {
+	width: 5em;
+	height: 5em;
+}
 .footer-section {
 	 background: #222121;
 }
@@ -427,8 +368,13 @@ ol {
 	padding-bottom: 0;
 }
 
+/*---------------------
+	Media queries and responsive
+----------------------*/
+
 
 @media only screen and (max-width: 1650px) {
+	
 	.sp-pad {
 		padding-left: 90px;
 		padding-right: 90px;
@@ -437,6 +383,8 @@ ol {
 }
 
 @media only screen and (max-width: 1510px) {
+	
+	
 	.sp-pad {
 		padding-left: 30px;
 		padding-right: 30px;
@@ -458,10 +406,17 @@ ol {
 	}
 }
 
-/* Medium screen : 992px. */
+
+
+
+@media only screen and (min-width: 992px) {
+	.hidden-large {
+		display: none;
+	}
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-	
+
 	.single-portfolio {
 		width: 33.33%;
 	}
@@ -478,8 +433,7 @@ ol {
 	.top {
 		background-image: url(../img/background-1200.jpg)
 	}
-	
-	
+		
 }
 
 
@@ -544,7 +498,6 @@ ol {
 	}
 	
 }
-
 
 @media only screen and (max-width: 479px) {
 
