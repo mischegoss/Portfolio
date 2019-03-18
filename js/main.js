@@ -1,24 +1,16 @@
-/* =================================
-------------------------------------
-	HALO - Photography Portfolio
-	Version: 1.0
- ------------------------------------ 
- ====================================*/
-
-
 
 
 $(window).on('load', function() {
 
 /* Preloader */
 	$(".loader").fadeOut(); 
-	$("#preloder").delay(400).fadeOut("slow");
-
+	$("#preloader").delay(400).fadeOut("slow");
+    
 });
 
+
+
 (function($) {
-
-
 
 /* Sets Background */
 	
@@ -29,4 +21,12 @@ $(window).on('load', function() {
 
 
 })(jQuery);
+
+$(document).ready(function() {
+    $('.nav-item').animateClick({
+        "color":"blue",
+        "animation":"signal",
+        "size":12
+    });
+});
 
